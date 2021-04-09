@@ -7,9 +7,21 @@ import athlete from '../img/athlete-small.png'
 import theracer from '../img/theracer-small.png'
 import goodtimes from '../img/goodtimes-small.png'
 
+//animation
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../animation'
+
 const MyWork = () => {
 	return (
-		<Work>
+		// after added motion to Work styled component
+		// now hav access to the props styles
+		<Work
+			exit='exit'
+			variants={pageAnimation}
+			initial='hidden'
+			animate='show'
+			style={{ background: '#fff' }}
+		>
 			<Movie>
 				<h2>The Athlete</h2>
 				<div className='line'></div>
@@ -35,7 +47,9 @@ const MyWork = () => {
 	)
 }
 
-const Work = styled.div`
+// adding motion to styled component
+// nicely doneeee
+const Work = styled(motion.div)`
 	min-height: 100vh;
 	overflow: hidden;
 	padding: 5rem 10rem;
