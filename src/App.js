@@ -6,6 +6,7 @@ import AboutMe from './pages/AboutMe'
 import Nav from './components/Nav'
 import ContactMe from './pages/ContactMe'
 import MyWork from './pages/MyWork'
+import MovieDetail from './pages/MovieDetail'
 
 //Router
 import { Switch, Route } from 'react-router-dom'
@@ -19,8 +20,11 @@ function App() {
 				<Route exact path='/'>
 					<AboutMe />
 				</Route>
-				<Route path='/work'>
+				<Route exact path='/work'>
 					<MyWork />
+				</Route>
+				<Route path='/work/:id'>
+					<MovieDetail />
 				</Route>
 				<Route path='/contact'>
 					<ContactMe />
