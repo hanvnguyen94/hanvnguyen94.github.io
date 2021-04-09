@@ -1,24 +1,27 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 // styled components
-export const About = styled.div`
+export const About = styled(motion.div)`
 	min-height: 90vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5rem 10rem;
-	color: #fff;
+	color: white;
 `
 
 export const Description = styled.div`
 	flex: 1;
 	padding-right: 5rem;
+	z-index: 2;
 	h2 {
 		font-weight: lighter;
 	}
 `
 
 export const Image = styled.div`
+	z-index: 2;
 	flex: 1;
 	overflow: hidden;
 	img {
@@ -27,6 +30,7 @@ export const Image = styled.div`
 		object-fit: cover;
 	}
 `
+
 export const Hide = styled.div`
 	overflow: hidden;
 `
