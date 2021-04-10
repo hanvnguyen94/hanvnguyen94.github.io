@@ -18,6 +18,7 @@ import {
 	slider,
 } from '../animation'
 import { useScroll } from '../components/useScroll'
+import ScrollToTop from '../components/ScrollToTop'
 
 const MyWork = () => {
 	const [element, controls] = useScroll()
@@ -66,6 +67,7 @@ const MyWork = () => {
 					<img src={goodtimes} alt='goodtimes' />
 				</Link>
 			</Movie>
+			<ScrollToTop />
 		</Work>
 	)
 }
