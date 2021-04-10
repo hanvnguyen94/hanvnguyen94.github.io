@@ -1,5 +1,5 @@
 import React from 'react'
-import home1 from '../img/home1.png'
+import profileGreen from '../img/profile-green.png'
 // import styled from 'styled-components'
 // framer motion
 import { motion } from 'framer-motion'
@@ -7,31 +7,56 @@ import { titleAnim, fade, photoAnim } from './../animation'
 import Wave from './Wave'
 
 import { About, Description, Image, Hide } from '../styles'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 const AboutSection = () => {
 	return (
 		<About>
 			<Description>
 				<motion.div>
 					<Hide>
-						<motion.h2 variants={titleAnim}>I work to make</motion.h2>
+						<motion.h2 variants={titleAnim}>Hello, World.</motion.h2>
 					</Hide>
 					<Hide>
 						<motion.h2 variants={titleAnim}>
-							my <span>dreams</span> come
+							I'm <span>Han</span>
 						</motion.h2>
 					</Hide>
 					<Hide>
-						<motion.h2 variants={titleAnim}>true.</motion.h2>
+						<motion.h4 style={{ opacity: 0.15 }} variants={titleAnim}>
+							the conqueror
+						</motion.h4>
 					</Hide>
 				</motion.div>
 				<motion.p variants={fade}>
-					Contact me for any coding related works that you have
+					Full-Stack Web Developer | Front-end Developer
 				</motion.p>
-				<motion.button variants={fade}>Contact Me</motion.button>
+				{/* <motion.button variants={fade}>Contact Me</motion.button> */}
+				<a
+					target='blank'
+					href='https://github.com/hanvnguyen94'
+					style={{ color: '#fff' }}
+				>
+					<FontAwesomeIcon
+						style={{ fontSize: '2.5rem', marginRight: '2rem' }}
+						variants={fade}
+						icon={faGithub}
+					/>
+				</a>
+				<a
+					target='blank'
+					href='https://www.linkedin.com/in/hnguyen94/'
+					style={{ color: '#fff' }}
+				>
+					<FontAwesomeIcon
+						style={{ fontSize: '2.5rem' }}
+						variants={fade}
+						icon={faLinkedinIn}
+					/>
+				</a>
 			</Description>
 			<Image>
-				<motion.img variants={photoAnim} src={home1} alt='guy with a camera' />
+				<motion.img variants={photoAnim} src={profileGreen} alt='han profile' />
 			</Image>
 			<Wave />
 		</About>

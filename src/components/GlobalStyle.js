@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-
 *{
   margin: 0;
   padding: 0;
@@ -61,6 +60,5 @@ h2 {
     font-size: 1.4rem;
     line-height: 150%
   }
-
 `
 export default GlobalStyle

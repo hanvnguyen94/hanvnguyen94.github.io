@@ -63,7 +63,7 @@ const StyledNav = styled.nav`
 	}
 	#logo {
 		font-family: 'Lobster', cursive;
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 		font-weight: lighter;
 	}
 	li {
