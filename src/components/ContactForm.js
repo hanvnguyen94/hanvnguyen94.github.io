@@ -4,6 +4,7 @@ import { Form, FormGroup, Input } from 'reactstrap'
 import { About, Description, Hide } from '../styles'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { scrollReveal } from '../animation'
 
 class ContactForm extends Component {
 	state = {
@@ -40,9 +41,10 @@ class ContactForm extends Component {
 	handleChange = (param, e) => {
 		this.setState({ [param]: e.target.value })
 	}
+
 	render() {
 		return (
-			<About>
+			<About variants={scrollReveal}>
 				<Description>
 					<Hide>
 						<motion.h2>
@@ -50,10 +52,10 @@ class ContactForm extends Component {
 						</motion.h2>
 					</Hide>
 					<FormContainer className='row display-section'>
-						<div className='col-sm-10 col-md-6 mx-auto mt-5'>
+						<motion.div className='col-sm-10 col-md-6 mx-auto mt-5'>
 							<Form onSubmit={this.handleSubmit.bind(this)}>
 								<FormGroup controlId='formBasicEmail'>
-									<h5>Email address</h5>
+									<motion.h5>Email address</motion.h5>
 									<Input
 										required
 										type='email'
@@ -65,7 +67,7 @@ class ContactForm extends Component {
 									/>
 								</FormGroup>
 								<FormGroup controlId='formBasicName'>
-									<h5>Name</h5>
+									<motion.h5>Name</motion.h5>
 									<Input
 										required
 										type='text'
@@ -77,7 +79,7 @@ class ContactForm extends Component {
 									/>
 								</FormGroup>
 								<FormGroup controlId='formBasicMessage'>
-									<h5>Message</h5>
+									<motion.h5>Message</motion.h5>
 									<Input
 										required
 										type='textarea'
@@ -87,11 +89,11 @@ class ContactForm extends Component {
 										onChange={this.handleChange.bind(this, 'message')}
 									/>
 								</FormGroup>
-								<button variant='primary' type='submit'>
+								<motion.button variant='primary' type='submit'>
 									Submit
-								</button>
+								</motion.button>
 							</Form>
-						</div>
+						</motion.div>
 					</FormContainer>
 				</Description>
 			</About>

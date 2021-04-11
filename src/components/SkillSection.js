@@ -37,60 +37,60 @@ const ServicesSection = () => {
 				</motion.h2>
 				<Container>
 					<Row>
-						<Col>
+						<Col className='icon'>
 							<img src={js} alt='' />
 							<p>JavaScript</p>
 						</Col>
-						<Col>
+						<Col className='icon'>
 							<img src={react} alt='' />
 							<p>React</p>
 						</Col>
-						<Col>
+						<Col className='icon'>
 							<img src={python} alt='' />
 							<p>Python</p>
 						</Col>
 					</Row>
 
 					<Row>
-						<Col>
+						<Col className='icon'>
 							<img src={django} alt='' />
 							<p>Django</p>
 						</Col>
-						<Col>
+						<Col className='icon'>
 							<img src={jquery} alt='' />
-							<p>jQuert</p>
+							<p>jQuery</p>
 						</Col>
-						<Col>
+						<Col className='icon'>
 							<img src={node} alt='' />
 							<p>Node</p>
 						</Col>
 					</Row>
 
 					<Row>
-						<Col>
+						<Col className='icon'>
 							<img src={postgresql} alt='' />
 							<p>PostgreSQL</p>
 						</Col>
-						<Col>
+						<Col className='icon'>
 							<img src={mongodb} alt='' />
 							<p>MongoDB</p>
 						</Col>
-						<Col>
+						<Col className='icon'>
 							<img src={git} alt='' />
 							<p>Git</p>
 						</Col>
 					</Row>
 
 					<Row>
-						<Col>
+						<Col className='icon'>
 							<img src={html} alt='' />
 							<p>HTML</p>
 						</Col>
-						<Col>
+						<Col className='icon'>
 							<img src={css} alt='' />
 							<p>CSS</p>
 						</Col>
-						<Col>
+						<Col className='icon'>
 							<img src={bootstrap} alt='' />
 							<p>Bootstrap</p>
 						</Col>
@@ -106,6 +106,13 @@ const Services = styled(About)`
 	padding-right: 0;
 	h2 {
 		padding-bottom: 5rem;
+	}
+	p {
+		padding: 2rem 0rem;
+	}
+	.icon {
+		justify-content: center;
+		text-align: center;
 	}
 	@media (max-width: 1300px) {
 		padding: 0rem 0rem 0rem 3rem;
