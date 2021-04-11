@@ -2,6 +2,7 @@ import React from 'react'
 import AboutSection from '../components/AboutSection'
 import ServicesSection from '../components/ServicesSection'
 import FaqSection from '../components/FaqSection'
+import ProjectSection from '../components/ProjectSection'
 
 //animation
 import { motion } from 'framer-motion'
@@ -18,6 +19,7 @@ const AboutMe = () => {
 		>
 			<AboutSection />
 			<ServicesSection />
+			<ProjectSection />
 			<FaqSection />
 			<ScrollToTop />
 		</motion.div>
