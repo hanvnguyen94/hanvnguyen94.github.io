@@ -19,7 +19,7 @@ body {
   overflow-x: hidden;
 }
 
-button {
+/* button {
   font-weight: bold;
   font-size: 1.1rem;
   cursor: pointer;
@@ -33,7 +33,7 @@ button {
     background-color: #23d997;
     color: #fff
   }
-}
+} */
 
 h2 {
     font-weight: lighter;

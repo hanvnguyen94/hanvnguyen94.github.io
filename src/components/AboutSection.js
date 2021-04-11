@@ -24,7 +24,7 @@ const AboutSection = () => {
 					</Hide>
 					<Hide>
 						<motion.h4 style={{ opacity: 0.15 }} variants={titleAnim}>
-							the conqueror
+							(the conqueror)
 						</motion.h4>
 					</Hide>
 				</motion.div>
@@ -32,24 +32,16 @@ const AboutSection = () => {
 					Full-Stack Web Developer | Front-end Developer
 				</motion.p>
 				{/* <motion.button variants={fade}>Contact Me</motion.button> */}
-				<a
-					target='blank'
-					href='https://github.com/hanvnguyen94'
-					style={{ color: '#fff' }}
-				>
+				<motion.a target='blank' href='https://github.com/hanvnguyen94'>
 					<FontAwesomeIcon
-						style={{ fontSize: '2.5rem', marginRight: '2rem' }}
+						style={{ fontSize: '2rem', marginRight: '1.5rem' }}
 						variants={fade}
 						icon={faGithub}
 					/>
-				</a>
-				<a
-					target='blank'
-					href='https://www.linkedin.com/in/hnguyen94/'
-					style={{ color: '#fff' }}
-				>
+				</motion.a>
+				<a target='blank' href='https://www.linkedin.com/in/hnguyen94/'>
 					<FontAwesomeIcon
-						style={{ fontSize: '2.5rem' }}
+						style={{ fontSize: '2rem' }}
 						variants={fade}
 						icon={faLinkedinIn}
 					/>

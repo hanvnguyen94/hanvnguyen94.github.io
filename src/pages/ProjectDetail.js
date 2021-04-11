@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
-import { MovieState } from '../movieState'
+import { ProjectState } from '../projectState'
 //animation
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
 
-const MovieDetail = () => {
+const ProjectDetail = () => {
 	const history = useHistory()
 	const url = history.location.pathname
-	const [movies, setMovies] = useState(MovieState)
-	const [movie, setMovie] = useState(null)
+	const [projects, setProjects] = useState(ProjectState)
+	const [project, setProject] = useState(null)
 
 	// useEffect
 	useEffect(() => {
-		const currentMovie = movies.filter((stateMovie) => stateMovie.url === url)
-		setMovie(currentMovie[0])
-	}, [movies, url])
+		const currentProject = projects.filter(
+			(stateProject) => stateProject.url === url
+		)
+		setProject(currentProject[0])
+	}, [projects, url])
 
 	return (
 		<>
-			{movie && (
+			{project && (
 				<Details
 					exit='exit'
 					variants={pageAnimation}
@@ -28,11 +30,11 @@ const MovieDetail = () => {
 					animate='show'
 				>
 					<HeadLine>
-						<h2>{movie.title}</h2>
-						<img src={movie.mainImg} alt='movie' />
+						<h2>{project.title}</h2>
+						<img src={project.mainImg} alt='movie' />
 					</HeadLine>
 					<Awards>
-						{movie.awards.map((award) => (
+						{project.awards.map((award) => (
 							<Award
 								title={award.title}
 								description={award.description}
@@ -40,9 +42,9 @@ const MovieDetail = () => {
 							/>
 						))}
 					</Awards>
-					<ImageDisplay>
-						<img src={movie.secondaryImg} alt='movie' />
-					</ImageDisplay>
+					{/* <ImageDisplay>
+						<img src={project.secondaryImg} alt='movie' />
+					</ImageDisplay> */}
 				</Details>
 			)}
 		</>
@@ -118,4 +120,4 @@ const Award = ({ title, description }) => {
 	)
 }
 
-export default MovieDetail
+export default ProjectDetail

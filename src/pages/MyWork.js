@@ -3,9 +3,15 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 // images
-import athlete from '../img/athlete-small.png'
-import theracer from '../img/theracer-small.png'
-import goodtimes from '../img/goodtimes-small.png'
+import beatMaker from '../img/projects/beatMaker.jpg'
+import jam from '../img/projects/jam.jpg'
+import loanCal from '../img/projects/loanCal.jpg'
+import mesh from '../img/projects/mesh.jpg'
+import momentum from '../img/projects/momentum.png'
+import subscription from '../img/projects/subscription.png'
+import ticTacToe from '../img/projects/ticTacToe.png'
+import todoList from '../img/projects/todoList.jpg'
+import yelpLoo from '../img/projects/yelpLoo.png'
 
 //animation
 import { motion } from 'framer-motion'
@@ -23,6 +29,12 @@ import ScrollToTop from '../components/ScrollToTop'
 const MyWork = () => {
 	const [element, controls] = useScroll()
 	const [element2, controls2] = useScroll()
+	const [element3, controls3] = useScroll()
+	const [element4, controls4] = useScroll()
+	const [element5, controls5] = useScroll()
+	const [element6, controls6] = useScroll()
+	const [element7, controls7] = useScroll()
+	const [element8, controls8] = useScroll()
 	return (
 		// after added motion to Work styled component
 		// now hav access to the props styles
@@ -40,19 +52,19 @@ const MyWork = () => {
 				<Frame4 variants={slider}></Frame4>
 			</motion.div>
 			<Movie>
-				<motion.h2 variants={fade}>The Athlete</motion.h2>
+				<motion.h2 variants={fade}>Jam Player</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<Link to='/work/the-athlete'>
+				<Link to='/work/jam-player'>
 					<Hide>
-						<motion.img variants={photoAnim} src={athlete} alt='athlete' />
+						<motion.img variants={photoAnim} src={jam} alt='jam' />
 					</Hide>
 				</Link>
 			</Movie>
 			<Movie ref={element} variants={fade} animate={controls} initial='hidden'>
-				<motion.h2>The Racer</motion.h2>
+				<motion.h2>The Beat Maker</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<Link to='/work/the-racer'>
-					<img src={theracer} alt='theracer' />
+				<Link to='/work/the-beat-maker'>
+					<img src={beatMaker} alt='the-beat-maker' />
 				</Link>
 			</Movie>
 			<Movie
@@ -61,10 +73,82 @@ const MyWork = () => {
 				animate={controls2}
 				initial='hidden'
 			>
-				<motion.h2>Good Times</motion.h2>
+				<motion.h2>Yelp Loo</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<Link to='/work/good-times'>
-					<img src={goodtimes} alt='goodtimes' />
+				<Link to='/work/yelp-loo'>
+					<img src={yelpLoo} alt='yelpLoo' />
+				</Link>
+			</Movie>
+			<Movie
+				ref={element3}
+				variants={fade}
+				animate={controls3}
+				initial='hidden'
+			>
+				<motion.h2>To-Do List</motion.h2>
+				<motion.div variants={lineAnim} className='line'></motion.div>
+				<Link to='/work/todo-list'>
+					<img src={todoList} alt='todoList' />
+				</Link>
+			</Movie>
+			<Movie
+				ref={element4}
+				variants={fade}
+				animate={controls4}
+				initial='hidden'
+			>
+				<motion.h2>Loan Calculator</motion.h2>
+				<motion.div variants={lineAnim} className='line'></motion.div>
+				<Link to='/work/loan-calculator'>
+					<img src={loanCal} alt='loanCal' />
+				</Link>
+			</Movie>
+			<Movie
+				ref={element5}
+				variants={fade}
+				animate={controls5}
+				initial='hidden'
+			>
+				<motion.h2>Momentum Clone</motion.h2>
+				<motion.div variants={lineAnim} className='line'></motion.div>
+				<Link to='/work/momentum'>
+					<img src={momentum} alt='momentum' />
+				</Link>
+			</Movie>
+			<Movie
+				ref={element6}
+				variants={fade}
+				animate={controls6}
+				initial='hidden'
+			>
+				<motion.h2>MESH E-Commerce</motion.h2>
+				<motion.div variants={lineAnim} className='line'></motion.div>
+				<Link to='/work/mesh'>
+					<img src={mesh} alt='mesh' />
+				</Link>
+			</Movie>
+			<Movie
+				ref={element7}
+				variants={fade}
+				animate={controls7}
+				initial='hidden'
+			>
+				<motion.h2>Subscription Tracking</motion.h2>
+				<motion.div variants={lineAnim} className='line'></motion.div>
+				<Link to='/work/subscription'>
+					<img src={subscription} alt='subscription' />
+				</Link>
+			</Movie>
+			<Movie
+				ref={element8}
+				variants={fade}
+				animate={controls8}
+				initial='hidden'
+			>
+				<motion.h2>Retro Tic-Tac-Toe</motion.h2>
+				<motion.div variants={lineAnim} className='line'></motion.div>
+				<Link to='/work/tic-tac-toe'>
+					<img src={ticTacToe} alt='ticTacToe' />
 				</Link>
 			</Movie>
 			<ScrollToTop />
