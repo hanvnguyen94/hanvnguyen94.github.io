@@ -16,7 +16,7 @@ import sass from '../img/icons/sass.svg'
 
 import { About, Description } from '../styles'
 import styled from 'styled-components'
-import { fade } from '../animation'
+import { scrollReveal } from '../animation'
 import { motion } from 'framer-motion'
 import { useScroll } from './useScroll'
 
@@ -24,7 +24,12 @@ const ServicesSection = () => {
 	const [element, controls] = useScroll()
 
 	return (
-		<Services variants={fade} animate={controls} initial='hidden' ref={element}>
+		<Services
+			variants={scrollReveal}
+			animate={controls}
+			initial='hidden'
+			ref={element}
+		>
 			<Description>
 				<motion.h2>
 					My <span>skills</span>.
@@ -110,9 +115,6 @@ const ServicesSection = () => {
 					</Card>
 				</Cards>
 			</Description>
-			{/* <Image>
-				<img src={coding3} alt='' />
-			</Image> */}
 		</Services>
 	)
 }
@@ -125,7 +127,10 @@ const Services = styled(About)`
 	}
 	p {
 		width: 70%;
-		padding: 2rem 0rem 4rem 0rem;
+		padding: 2rem 0rem 2rem 0rem;
+	}
+	@media (max-width: 1300px) {
+		padding: 0rem;
 	}
 `
 
@@ -141,8 +146,6 @@ const Card = styled.div`
 		align-items: center;
 		p {
 			margin-left: 1rem;
-			/* background: #fff; */
-			/* color: #000000; */
 			padding: 1rem;
 		}
 	}

@@ -14,13 +14,12 @@ export const ProjectState = () => {
 		{
 			title: 'Jam Player',
 			mainImg: jam,
-			// secondaryImg: athlete2,
 			url: '/work/jam-player',
 			awards: [
 				{
-					title: 'Truly A masterpiece',
+					title: 'Front-End Repo',
 					description:
-						'“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+						'“Feeling like you need a chill playlist for better concentration on your coding daily tasks? Check out my chillhop playlist as link below”',
 				},
 				{
 					title: 'Fresh look on a brutal sport.',

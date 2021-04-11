@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutSection from '../components/AboutSection'
-import ServicesSection from '../components/ServicesSection'
-import FaqSection from '../components/FaqSection'
+import SkillSection from '../components/SkillSection'
+// import FaqSection from '../components/FaqSection'
 import ProjectSection from '../components/ProjectSection'
 
 //animation
@@ -18,9 +18,9 @@ const AboutMe = () => {
 			animate='show'
 		>
 			<AboutSection />
-			<ServicesSection />
+			<SkillSection />
 			<ProjectSection />
-			<FaqSection />
+			{/* <FaqSection /> */}
 			<ScrollToTop />
 		</motion.div>
 	)
