@@ -37,13 +37,7 @@ const MyWork = () => {
 	return (
 		// after added motion to Work styled component
 		// now hav access to the props styles
-		<Work
-			exit='exit'
-			variants={pageAnimation}
-			initial='hidden'
-			animate='show'
-			style={{ background: '#fff' }}
-		>
+		<Work exit='exit' variants={pageAnimation} initial='hidden' animate='show'>
 			<motion.div variants={sliderContainer}>
 				<Frame1 variants={slider}></Frame1>
 				<Frame2 variants={slider}></Frame2>
@@ -55,46 +49,50 @@ const MyWork = () => {
 				<motion.div variants={lineAnim} className='line'></motion.div>
 				<Hide>
 					<motion.img variants={photoAnim} src={jam} alt='jam' />
-					<motion.p>
+					<motion.p variants={fade}>
 						Feeling like you need a chill playlist for better concentration on
 						your coding daily tasks? Check out my chillhop playlist as link
 						below
 					</motion.p>
 					<motion.a
+						variants={fade}
 						style={{ marginRight: '1rem' }}
 						target='blank'
 						href='https://github.com/hanvnguyen94/jam-player'
 					>
-						<motion.button>Front-End Repo</motion.button>
+						<motion.button variants={fade}>Front-End Repo</motion.button>
 					</motion.a>
 					<motion.a
+						variants={fade}
 						target='blank'
 						href='https://hanvnguyen94.github.io/jam-player/'
 					>
-						<motion.button>Deployed Site</motion.button>
+						<motion.button variants={fade}>Deployed Site</motion.button>
 					</motion.a>
 				</Hide>
 			</Movie>
 			<Movie ref={element} variants={fade} animate={controls} initial='hidden'>
-				<motion.h2>The Beat Maker</motion.h2>
+				<motion.h2 variants={fade}>The Beat Maker</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<img src={beatMaker} alt='the-beat-maker' />
-				<motion.p>
+				<motion.img variants={photoAnim} src={beatMaker} alt='the-beat-maker' />
+				<motion.p variants={fade}>
 					Simple browser application called The Beat Maker. It will generate the
 					beat based on your choices of sounds.
 				</motion.p>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/the-beat-maker'
 				>
-					<motion.button>Front-End Repo</motion.button>
+					<motion.button variants={fade}>Front-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					target='blank'
 					href='https://hanvnguyen94.github.io/the-beat-maker/'
 				>
-					<motion.button>Deployed Site</motion.button>
+					<motion.button variants={fade}>Deployed Site</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -103,34 +101,37 @@ const MyWork = () => {
 				animate={controls2}
 				initial='hidden'
 			>
-				<motion.h2>Yelp Loo</motion.h2>
+				<motion.h2 variants={fade}>Yelp Loo</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<img src={yelpLoo} alt='yelpLoo' />
-				<motion.p>
+				<motion.img variants={photoAnim} src={yelpLoo} alt='yelpLoo' />
+				<motion.p variants={fade}>
 					This full-stack application can be viewed as a clone of Yelp.com . It
 					has two resources which are user and loos(bathrooms). The user will be
 					able to create an account and organize their "public bathroom" online,
 					which stores all related information like photos and addresses.
 				</motion.p>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/yelp-loo-client'
 				>
-					<motion.button>Front-End Repo</motion.button>
+					<motion.button variants={fade}>Front-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/yelp-loo-api'
 				>
-					<motion.button>Back-End Repo</motion.button>
+					<motion.button variants={fade}>Back-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					target='blank'
 					href='https://hanvnguyen94.github.io/yelp-loo-client/#/'
 				>
-					<motion.button>Deployed Site</motion.button>
+					<motion.button variants={fade}>Deployed Site</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -139,25 +140,27 @@ const MyWork = () => {
 				animate={controls3}
 				initial='hidden'
 			>
-				<motion.h2>To-Do List</motion.h2>
+				<motion.h2 variants={fade}>To-Do List</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<img src={todoList} alt='todoList' />
-				<motion.p>
+				<motion.img variants={photoAnim} src={todoList} alt='todoList' />
+				<motion.p variants={fade}>
 					Simple Todo List App made with React helps keep track of your daily
 					tasks
 				</motion.p>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/todoList'
 				>
-					<motion.button>Front-End Repo</motion.button>
+					<motion.button variants={fade}>Front-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					target='blank'
 					href='https://hanvnguyen94.github.io/todoList/'
 				>
-					<motion.button>Deployed Site</motion.button>
+					<motion.button variants={fade}>Deployed Site</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -166,15 +169,16 @@ const MyWork = () => {
 				animate={controls4}
 				initial='hidden'
 			>
-				<motion.h2>Loan Calculator</motion.h2>
+				<motion.h2 variants={fade}>Loan Calculator</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<img src={loanCal} alt='loanCal' />
-				<motion.p>
+				<motion.img variants={photoAnim} src={loanCal} alt='loanCal' />
+				<motion.p variants={fade}>
 					A loan calculator made with React. It will help users determine the
 					monthly payments on a loan. Simply enter the loan amount, term and
 					interest rate in the fields below and click calculate.
 				</motion.p>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/loan-calculator'
@@ -182,10 +186,11 @@ const MyWork = () => {
 					<motion.button>Front-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					target='blank'
 					href='https://hanvnguyen94.github.io/loan-calculator/#/'
 				>
-					<motion.button>Deployed Site</motion.button>
+					<motion.button variants={fade}>Deployed Site</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -194,27 +199,29 @@ const MyWork = () => {
 				animate={controls5}
 				initial='hidden'
 			>
-				<motion.h2>Momentum Clone</motion.h2>
+				<motion.h2 variants={fade}>Momentum Clone</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<img src={momentum} alt='momentum' />
-				<motion.p>
+				<motion.img variants={photoAnim} src={momentum} alt='momentum' />
+				<motion.p variants={fade}>
 					My first React Client Site built as a clone of the famous Chrome
 					extension "Momentum". It basically will generate new quotes, pictures
 					and also trigger weather base on provided zip code everytime you
 					visit.
 				</motion.p>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/momentum-clone-client'
 				>
-					<motion.button>Front-End Repo</motion.button>
+					<motion.button variants={fade}>Front-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					target='blank'
 					href='https://hanvnguyen94.github.io/momentum-clone-client/#/'
 				>
-					<motion.button>Deployed Site</motion.button>
+					<motion.button variants={fade}>Deployed Site</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -223,10 +230,10 @@ const MyWork = () => {
 				animate={controls6}
 				initial='hidden'
 			>
-				<motion.h2>MESH E-Commerce</motion.h2>
+				<motion.h2 variants={fade}>MESH E-Commerce</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<img src={mesh} alt='mesh' />
-				<motion.p>
+				<motion.img variants={photoAnim} src={mesh} alt='mesh' />
+				<motion.p variants={fade}>
 					MESH is an e-commerce platform that aims to promote and handle the
 					purchasing of consumer electronics. Guests can see all the products
 					from the home page. To buy them, a guest can sign-up and buy an item
@@ -234,24 +241,27 @@ const MyWork = () => {
 					React Stripe.js, an industry-trusted software.
 				</motion.p>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/jam-player'
 				>
-					<motion.button>Front-End Repo</motion.button>
+					<motion.button variants={fade}>Front-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/MESHisBest/mesh-ecommerce-backend'
 				>
-					<motion.button>Back-End Repo</motion.button>
+					<motion.button variants={fade}>Back-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					target='blank'
 					href='https://meshisbest.github.io/mesh-ecommerce-client/#/'
 				>
-					<motion.button>Deployed Site</motion.button>
+					<motion.button variants={fade}>Deployed Site</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -260,23 +270,29 @@ const MyWork = () => {
 				animate={controls7}
 				initial='hidden'
 			>
-				<motion.h2>Subscription Tracking</motion.h2>
+				<motion.h2 variants={fade}>Subscription Tracking</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<img src={subscription} alt='subscription' />
-				<motion.p>
+				<motion.img
+					variants={photoAnim}
+					src={subscription}
+					alt='subscription'
+				/>
+				<motion.p variants={fade}>
 					This full-stack application got inspired by the traditional To-Do List
 					has two resources. There are user and subscription. The user will be
 					able to create an account and organize their "online subscriptions",
 					which helps them avoid paying extra fee when their free trial is over.
 				</motion.p>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/subscriptions-tracking-app-client'
 				>
-					<motion.button>Front-End Repo</motion.button>
+					<motion.button variants={fade}>Front-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/tracking-server'
@@ -284,10 +300,11 @@ const MyWork = () => {
 					<motion.button>Back-End Repo</motion.button>
 				</motion.a>
 				<motion.a
+					variants={fade}
 					target='blank'
 					href='https://hanvnguyen94.github.io/subscriptions-tracking-app-client/'
 				>
-					<motion.button>Deployed Site</motion.button>
+					<motion.button variants={fade}>Deployed Site</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -298,23 +315,24 @@ const MyWork = () => {
 			>
 				<motion.h2>Retro Tic-Tac-Toe</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
-				<img src={ticTacToe} alt='ticTacToe' />
-				<motion.p>
+				<motion.img variants={photoAnim} src={ticTacToe} alt='ticTacToe' />
+				<motion.p variants={fade}>
 					My first Tic-Tac-Toe game project created with Javascript and jQuery.
 					This application allows user to play Tic-Tac-Toe against themself.
 				</motion.p>
 				<motion.a
+					variants={fade}
 					style={{ marginRight: '1rem' }}
 					target='blank'
 					href='https://github.com/hanvnguyen94/tic-tac-toe-client'
 				>
-					<motion.button>Front-End Repo</motion.button>
+					<motion.button variants={fade}>Front-End Repo</motion.button>
 				</motion.a>
 				<motion.a
 					target='blank'
 					href='https://hanvnguyen94.github.io/tic-tac-toe-client/'
 				>
-					<motion.button>Deployed Site</motion.button>
+					<motion.button variants={fade}>Deployed Site</motion.button>
 				</motion.a>
 			</Movie>
 			<ScrollToTop />
@@ -333,14 +351,14 @@ const Work = styled(motion.div)`
 	}
 	h2 {
 		padding: 1rem 0rem;
+		color: #fff;
 	}
 `
 const Movie = styled(motion.div)`
 	padding-bottom: 10rem;
 	p {
-		color: #1b1b1b;
+		color: #ccc;
 		font-size: 2rem;
-		font-weight: lighter;
 	}
 	.line {
 		height: 0.5rem;
@@ -351,6 +369,23 @@ const Movie = styled(motion.div)`
 		width: 100%;
 		height: 70vh;
 		object-fit: cover;
+	}
+	button {
+		outline: none;
+		font-weight: bold;
+		font-size: 1.3rem;
+		cursor: pointer;
+		padding: 1rem 2rem;
+		border: 3px solid #23d997;
+		background: transparent;
+		color: fff;
+		transition: all 0.5s ease;
+		font-family: 'Inter', sans-serif;
+		color: #fff;
+		&:hover {
+			background-color: #23d997;
+			color: #fff;
+		}
 	}
 `
 

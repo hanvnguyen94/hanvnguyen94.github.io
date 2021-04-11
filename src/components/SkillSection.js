@@ -130,7 +130,7 @@ const Services = styled(About)`
 		padding: 2rem 0rem 2rem 0rem;
 	}
 	@media (max-width: 1300px) {
-		padding: 0rem;
+		padding: 0rem 0rem 0rem 3rem;
 	}
 `
 

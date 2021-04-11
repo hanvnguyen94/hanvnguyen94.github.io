@@ -2,7 +2,9 @@ import React from 'react'
 import AboutSection from '../components/AboutSection'
 import SkillSection from '../components/SkillSection'
 // import FaqSection from '../components/FaqSection'
+// import IntroSection from '../components/IntroSection'
 import ProjectSection from '../components/ProjectSection'
+import Contact from '../components/ContactForm'
 
 //animation
 import { motion } from 'framer-motion'
@@ -18,9 +20,11 @@ const AboutMe = () => {
 			animate='show'
 		>
 			<AboutSection />
+			{/* <IntroSection /> */}
 			<SkillSection />
 			<ProjectSection />
 			{/* <FaqSection /> */}
+			<Contact />
 			<ScrollToTop />
 		</motion.div>
 	)
