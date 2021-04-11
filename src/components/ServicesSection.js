@@ -1,26 +1,20 @@
 import React from 'react'
-// import clock from '../img/clock.svg'
-// import diaphragm from '../img/diaphragm.svg'
-// import money from '../img/money.svg'
-// import teamwork from '../img/teamwork.svg'
-// import home2 from '../img/home2.png'
+// icons
+import js from '../img/icons/js.svg'
+import react from '../img/icons/react.svg'
+import python from '../img/icons/python.svg'
+import django from '../img/icons/django.svg'
+import jquery from '../img/icons/jquery.svg'
+import html from '../img/icons/html.svg'
+import css from '../img/icons/css.svg'
+import postgresql from '../img/icons/postgresql.svg'
+import mongodb from '../img/icons/mongodb.svg'
+import bootstrap from '../img/icons/bootstrap.svg'
+import node from '../img/icons/node.svg'
+import git from '../img/icons/git.svg'
+import sass from '../img/icons/sass.svg'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-	faPython,
-	faNodeJs,
-	faReact,
-	faBootstrap,
-	faHtml5,
-	faCss3,
-	faGit,
-	faJs,
-} from '@fortawesome/free-brands-svg-icons'
-
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel'
-
-import { About, Description, Image } from '../styles'
+import { About, Description } from '../styles'
 import styled from 'styled-components'
 import { fade } from '../animation'
 import { motion } from 'framer-motion'
@@ -35,41 +29,97 @@ const ServicesSection = () => {
 				<motion.h2>
 					My <span>skills</span>.
 				</motion.h2>
-				<Carousel>
-					<div className='icon'>
-						<i className='devicons devicons-javascript'></i>
-						<h5>JavaScript</h5>
-						<br />
-						<FontAwesomeIcon
-							icon={faReact}
-							style={{ width: '5%', height: '5%' }}
-						/>
-						<h5>React</h5>
-					</div>
-					<div className='icon'>
-						<FontAwesomeIcon
-							icon={faJs}
-							style={{ width: '5%', height: '5%' }}
-						/>
-						<h5>JavaScript</h5>
-						<br />
-						<FontAwesomeIcon
-							icon={faReact}
-							style={{ width: '5%', height: '5%' }}
-						/>
-						<h5>React</h5>
-					</div>
-				</Carousel>
+				<Cards>
+					<Card>
+						<div className='icon'>
+							<img src={js} alt='' />
+							<p>JavaScript</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={react} alt='' />
+							<p>React</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={python} alt='' />
+							<p>Python</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={django} alt='' />
+							<p>Django</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={node} alt='' />
+							<p>Node</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={html} alt='' />
+							<p>HTML</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={css} alt='' />
+							<p>CSS</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={bootstrap} alt='' />
+							<p>Bootstrap</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={postgresql} alt='' />
+							<p>PostgreSQL</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={mongodb} alt='' />
+							<p>MongoDB</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={jquery} alt='' />
+							<p>jQuery</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={git} alt='' />
+							<p>Git</p>
+						</div>
+					</Card>
+					<Card>
+						<div className='icon'>
+							<img src={sass} alt='' />
+							<p>SASS</p>
+						</div>
+					</Card>
+				</Cards>
 			</Description>
 			{/* <Image>
-				<img src={home2} alt='' />
+				<img src={coding3} alt='' />
 			</Image> */}
 		</Services>
 	)
 }
 
 const Services = styled(About)`
-	width: 100%;
+	justify-content: center;
+	padding-right: 0;
 	h2 {
 		padding-bottom: 5rem;
 	}
@@ -82,26 +132,19 @@ const Services = styled(About)`
 const Cards = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	@media (max-width: 1300px) {
-		justify-content: center;
-	}
 `
 const Card = styled.div`
 	flex-basis: 20rem;
-	i {
-		width: 20%;
-		height: 20%;
-	}
+	padding-bottom: 2rem;
 	.icon {
 		display: flex;
-		/* align-items: center; */
-		/* h3 {
+		align-items: center;
+		p {
 			margin-left: 1rem;
-			background: #fff;
-			border: 2px solid #23d997;
-			color: #000000;
+			/* background: #fff; */
+			/* color: #000000; */
 			padding: 1rem;
-		} */
+		}
 	}
 `
 
