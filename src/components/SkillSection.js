@@ -17,7 +17,7 @@ import git from '../img/icons/git.svg'
 
 import { About, Description } from '../styles'
 import styled from 'styled-components'
-import { scrollReveal } from '../animation'
+import { fade } from '../animation'
 import { motion } from 'framer-motion'
 import { useScroll } from './useScroll'
 
@@ -25,12 +25,7 @@ const ServicesSection = () => {
 	const [element, controls] = useScroll()
 
 	return (
-		<Services
-			variants={scrollReveal}
-			animate={controls}
-			initial='hidden'
-			ref={element}
-		>
+		<Services variants={fade} animate={controls} initial='hidden' ref={element}>
 			<Description>
 				<motion.h2>
 					My <span>skills</span>.
@@ -114,8 +109,12 @@ const Services = styled(About)`
 		justify-content: center;
 		text-align: center;
 	}
-	@media (max-width: 1300px) {
+	@media (max-width: 1000px) {
 		padding: 0rem 0rem 0rem 3rem;
+		img {
+			max-width: 50%;
+			max-height: 50%;
+		}
 	}
 `
 
