@@ -29,14 +29,14 @@ const Nav = () => {
 						animate={{ width: pathname === '/work' ? '50%' : '0%' }}
 					/>
 				</li>
-				<li>
+				{/* <li>
 					<Link to='/contact'>3. Contact Me</Link>
 					<Line
 						transition={{ duration: 0.75 }}
 						initial={{ width: '0%' }}
 						animate={{ width: pathname === '/contact' ? '50%' : '0%' }}
 					/>
-				</li>
+				</li> */}
 			</ul>
 		</StyledNav>
 	)

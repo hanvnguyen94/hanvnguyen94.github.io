@@ -4,7 +4,7 @@ import GlobalStyle from './components/GlobalStyle'
 
 import AboutMe from './pages/AboutMe'
 import Nav from './components/Nav'
-import ContactMe from './pages/ContactMe'
+// import ContactMe from './pages/ContactMe'
 import MyWork from './pages/MyWork'
 
 //Router
@@ -27,9 +27,9 @@ function App() {
 					<Route exact path='/work'>
 						<MyWork />
 					</Route>
-					<Route path='/contact'>
+					{/* <Route path='/contact'>
 						<ContactMe />
-					</Route>
+					</Route> */}
 				</Switch>
 			</AnimatePresence>
 		</div>
