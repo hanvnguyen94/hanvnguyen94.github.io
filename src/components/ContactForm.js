@@ -10,21 +10,19 @@ class ContactForm extends Component {
 	state = {
 		name: '',
 		email: '',
-		subject: '',
 		message: '',
 	}
 	handleSubmit(e) {
 		e.preventDefault()
-		const { name, email, subject, message } = this.state
+		const { name, email, message } = this.state
 		let templateParams = {
 			name: name,
 			email: email,
-			subject: subject,
-			message_html: message,
+			message: message,
 		}
 		emailjs.send(
 			'service_momykq8',
-			'template_2j5h5nq',
+			'template_2j5h4nq',
 			templateParams,
 			'user_ycQPTV0vafFFz8v5UVteS'
 		)
@@ -34,7 +32,6 @@ class ContactForm extends Component {
 		this.setState({
 			name: '',
 			email: '',
-			subject: '',
 			message: '',
 		})
 	}
@@ -54,7 +51,7 @@ class ContactForm extends Component {
 					<FormContainer className='row display-section'>
 						<motion.div className='col-sm-10 col-md-6 mx-auto mt-5'>
 							<Form onSubmit={this.handleSubmit.bind(this)}>
-								<FormGroup controlId='formBasicEmail'>
+								<FormGroup controlid='formBasicEmail'>
 									<motion.h5>Email address</motion.h5>
 									<Input
 										required
@@ -66,7 +63,7 @@ class ContactForm extends Component {
 										placeholder='Enter email'
 									/>
 								</FormGroup>
-								<FormGroup controlId='formBasicName'>
+								<FormGroup controlid='formBasicName'>
 									<motion.h5>Name</motion.h5>
 									<Input
 										required
@@ -78,7 +75,7 @@ class ContactForm extends Component {
 										placeholder='Name'
 									/>
 								</FormGroup>
-								<FormGroup controlId='formBasicMessage'>
+								<FormGroup controlid='formBasicMessage'>
 									<motion.h5>Message</motion.h5>
 									<Input
 										required
