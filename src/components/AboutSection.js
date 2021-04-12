@@ -4,7 +4,8 @@ import profileGreen from '../img/profile-green.png'
 // framer motion
 import { motion } from 'framer-motion'
 import { titleAnim, fade, photoAnim } from './../animation'
-import Wave from './Wave'
+// import Wave from './Wave'
+import MillenniumFalcon from './MillenniumFalcon'
 
 import { About, Description, Image, Hide } from '../styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -50,7 +51,7 @@ const AboutSection = () => {
 			<Image>
 				<motion.img variants={photoAnim} src={profileGreen} alt='han profile' />
 			</Image>
-			<Wave />
+			<MillenniumFalcon />
 		</About>
 	)
 }
