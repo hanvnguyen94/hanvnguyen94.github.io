@@ -72,7 +72,7 @@ class ContactForm extends Component {
 										value={this.state.name}
 										className='text-primary'
 										onChange={this.handleChange.bind(this, 'name')}
-										placeholder='Name'
+										placeholder='Enter 	Name'
 									/>
 								</FormGroup>
 								<FormGroup controlid='formBasicMessage'>
