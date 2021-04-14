@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { titleAnim, fade, photoAnim } from './../animation'
 import MillenniumFalcon from './MillenniumFalcon'
 import { About, Description, Image, Hide } from '../styles'
-// import ScrollToTop from './ScrollToTop'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
