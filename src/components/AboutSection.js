@@ -57,7 +57,7 @@ const AboutSection = () => {
 				<motion.a
 					variants={fade}
 					target='blank'
-					href='https://drive.google.com/file/d/1uoJ4Ca75GWiT_IOzUvCsjpTj5EJM6Z6b/view?usp=sharing'
+					href='https://drive.google.com/file/d/1BK7jYg9Xlirj768xqDI0AUtxmdnHB9bw/view?usp=sharing'
 				>
 					<FontAwesomeIcon
 						style={{ fontSize: '2rem', marginRight: '1.5rem' }}
