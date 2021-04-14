@@ -1,17 +1,16 @@
 import React from 'react'
-// import styles
+// import styles & animation
 import GlobalStyle from './components/GlobalStyle'
+import { AnimatePresence } from 'framer-motion'
 
 import AboutMe from './pages/AboutMe'
 import Nav from './components/Nav'
-// import ContactMe from './pages/ContactMe'
 import MyWork from './pages/MyWork'
 
 //Router
 import { Switch, Route, useLocation } from 'react-router-dom'
 
 // animation
-import { AnimatePresence } from 'framer-motion'
 
 function App() {
 	const location = useLocation()
@@ -27,9 +26,6 @@ function App() {
 					<Route exact path='/work'>
 						<MyWork />
 					</Route>
-					{/* <Route path='/contact'>
-						<ContactMe />
-					</Route> */}
 				</Switch>
 			</AnimatePresence>
 		</div>

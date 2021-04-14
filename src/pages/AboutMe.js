@@ -1,7 +1,6 @@
 import React from 'react'
 import AboutSection from '../components/AboutSection'
 import SkillSection from '../components/SkillSection'
-// import FaqSection from '../components/FaqSection'
 import ProjectSection from '../components/ProjectSection'
 import Contact from '../components/ContactForm'
 
@@ -21,7 +20,6 @@ const AboutMe = () => {
 			<AboutSection />
 			<SkillSection />
 			<ProjectSection />
-			{/* <FaqSection /> */}
 			<Contact />
 			<ScrollToTop />
 		</motion.div>

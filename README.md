@@ -1,5 +1,10 @@
-## React Portfolio
+# Han Nguyen Portfolio
 
-I'm building new portfolio site with React.
+This is my latest portfolio page built in with deved
 
-Stay tuned 😁
+## Technologies
+
+- React.js
+- React Bootstrap
+- Framer Motion
+- Awesome slider

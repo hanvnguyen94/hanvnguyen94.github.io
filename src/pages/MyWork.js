@@ -105,7 +105,7 @@ const MyWork = () => {
 				<motion.div variants={lineAnim} className='line'></motion.div>
 				<motion.img variants={photoAnim} src={yelpLoo} alt='yelpLoo' />
 				<motion.p variants={fade}>
-					This full-stack application can be viewed as a clone of Yelp.com . It
+					This full-stack application can be viewed as a clone of Yelp.com. It
 					has two resources which are user and loos(bathrooms). The user will be
 					able to create an account and organize their "public bathroom" online,
 					which stores all related information like photos and addresses.
@@ -131,7 +131,9 @@ const MyWork = () => {
 					target='blank'
 					href='https://hanvnguyen94.github.io/yelp-loo-client/#/'
 				>
-					<motion.button variants={fade}>Deployed Site</motion.button>
+					<motion.button style={{ marginTop: '1rem' }} variants={fade}>
+						Deployed Site
+					</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -261,7 +263,9 @@ const MyWork = () => {
 					target='blank'
 					href='https://meshisbest.github.io/mesh-ecommerce-client/#/'
 				>
-					<motion.button variants={fade}>Deployed Site</motion.button>
+					<motion.button style={{ marginTop: '1rem' }} variants={fade}>
+						Deployed Site
+					</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -304,7 +308,9 @@ const MyWork = () => {
 					target='blank'
 					href='https://hanvnguyen94.github.io/subscriptions-tracking-app-client/'
 				>
-					<motion.button variants={fade}>Deployed Site</motion.button>
+					<motion.button style={{ marginTop: '1rem' }} variants={fade}>
+						Deployed Site
+					</motion.button>
 				</motion.a>
 			</Movie>
 			<Movie
@@ -348,6 +354,9 @@ const Work = styled(motion.div)`
 	padding: 5rem 10rem;
 	@media (max-width: 1300px) {
 		padding: 2rem 2rem;
+		h2 {
+			font-size: 2rem;
+		}
 	}
 	h2 {
 		padding: 1rem 0rem;
@@ -378,13 +387,25 @@ const Movie = styled(motion.div)`
 		padding: 1rem 2rem;
 		border: 3px solid #23d997;
 		background: transparent;
-		color: fff;
+		color: #ccc;
 		transition: all 0.5s ease;
 		font-family: 'Inter', sans-serif;
-		color: #fff;
 		&:hover {
 			background-color: #23d997;
-			color: #fff;
+			color: #000000;
+		}
+	}
+	@media (max-width: 1300px) {
+		p {
+			font-size: 1.5rem;
+		}
+		img {
+			width: 100%;
+			height: 45vh;
+			object-fit: cover;
+		}
+		button {
+			font-size: 1rem;
 		}
 	}
 `

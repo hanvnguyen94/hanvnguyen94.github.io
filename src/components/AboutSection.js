@@ -76,7 +76,6 @@ const AboutSection = () => {
 				</Image>
 				<MillenniumFalcon />
 			</About>
-			{/* <ScrollToTop /> */}
 		</>
 	)
 }
