@@ -17,11 +17,11 @@ const AboutMe = () => {
 			initial='hidden'
 			animate='show'
 		>
+			<ScrollToTop />
 			<AboutSection />
 			<SkillSection />
 			<ProjectSection />
 			<Contact />
-			<ScrollToTop />
 		</motion.div>
 	)
 }

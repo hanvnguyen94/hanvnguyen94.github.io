@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const MillenniumFalcon = () => {
 	return (
 		<FalconSvg
-			viewBox='0 0 1607 444'
+			viewBox='0 0 1600 444'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 		>
@@ -18,7 +18,7 @@ const MillenniumFalcon = () => {
 					fill='#D96ED4'
 					stroke='#D96ED4'
 					strokeOpacity='0.5'
-					strokeWidth='10'
+					strokeWidth='8'
 				/>
 				<motion.path
 					initial={{ pathLength: 0, pathOffset: 1 }}

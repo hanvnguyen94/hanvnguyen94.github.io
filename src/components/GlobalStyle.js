@@ -15,13 +15,13 @@ html {
 
 body {
   background: #1b1b1b;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 
 h2 {
     font-weight: lighter;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   h3 {
     color: #fff

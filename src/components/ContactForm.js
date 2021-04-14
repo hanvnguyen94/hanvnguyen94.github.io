@@ -60,7 +60,7 @@ class ContactForm extends Component {
 										value={this.state.email}
 										className='text-primary'
 										onChange={this.handleChange.bind(this, 'email')}
-										placeholder='Enter email'
+										placeholder='Your email'
 									/>
 								</FormGroup>
 								<FormGroup controlid='formBasicName'>
@@ -72,13 +72,14 @@ class ContactForm extends Component {
 										value={this.state.name}
 										className='text-primary'
 										onChange={this.handleChange.bind(this, 'name')}
-										placeholder='Enter 	Name'
+										placeholder='Your name'
 									/>
 								</FormGroup>
 								<FormGroup controlid='formBasicMessage'>
 									<motion.h5>Message</motion.h5>
 									<Input
 										required
+										placeholder='Enter your message'
 										type='textarea'
 										name='message'
 										className='text-primary'
@@ -110,7 +111,7 @@ const FormContainer = styled(motion.div)`
 		background: transparent;
 		color: fff;
 		transition: all 0.5s ease;
-		font-family: 'Inter', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		color: #fff;
 		margin-bottom: 2rem;
 		&:hover {

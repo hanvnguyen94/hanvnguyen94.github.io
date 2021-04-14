@@ -45,7 +45,7 @@ const MyWork = () => {
 				<Frame4 variants={slider}></Frame4>
 			</motion.div>
 			<Movie>
-				<motion.h2 variants={fade}>Jam Player</motion.h2>
+				<motion.h2 variants={fade}>Music Player</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
 				<Hide>
 					<motion.img variants={photoAnim} src={jam} alt='jam' />
@@ -106,9 +106,9 @@ const MyWork = () => {
 				<motion.img variants={photoAnim} src={yelpLoo} alt='yelpLoo' />
 				<motion.p variants={fade}>
 					This full-stack application can be viewed as a clone of Yelp.com. It
-					has two resources which are user and loos(bathrooms). The user will be
-					able to create an account and organize their "public bathroom" online,
-					which stores all related information like photos and addresses.
+					has two resources which are user and loos. The user will be able to
+					create an account and organize their "public bathroom" online, which
+					stores all related information like photos and addresses.
 				</motion.p>
 				<motion.a
 					variants={fade}
@@ -354,20 +354,18 @@ const Work = styled(motion.div)`
 	padding: 5rem 10rem;
 	@media (max-width: 1300px) {
 		padding: 2rem 2rem;
-		h2 {
-			font-size: 2rem;
-		}
 	}
 	h2 {
 		padding: 1rem 0rem;
 		color: #fff;
+		font-size: 2.5rem;
 	}
 `
 const Movie = styled(motion.div)`
 	padding-bottom: 10rem;
 	p {
 		color: #ccc;
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 	.line {
 		height: 0.5rem;
@@ -375,21 +373,22 @@ const Movie = styled(motion.div)`
 		margin-bottom: 3rem;
 	}
 	img {
-		width: 100%;
-		height: 70vh;
+		width: 95%;
+		height: 60vh;
 		object-fit: cover;
+		align-items: center;
 	}
 	button {
 		outline: none;
 		font-weight: bold;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		cursor: pointer;
 		padding: 1rem 2rem;
 		border: 3px solid #23d997;
 		background: transparent;
 		color: #ccc;
 		transition: all 0.5s ease;
-		font-family: 'Inter', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		&:hover {
 			background-color: #23d997;
 			color: #000000;
@@ -406,6 +405,9 @@ const Movie = styled(motion.div)`
 		}
 		button {
 			font-size: 1rem;
+		}
+		h2 {
+			font-size: 2rem;
 		}
 	}
 `
