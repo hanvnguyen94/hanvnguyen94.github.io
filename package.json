@@ -1,7 +1,6 @@
 {
   "name": "hanvnguyen94.github.io",
-  "homepage": "http://hanvnguyen94.github.io/"
-  ,
+  "homepage": "http://hanvnguyen94.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +22,7 @@
     "react-hook-form": "^6.15.1",
     "react-intersection-observer": "^8.31.0",
     "react-router-dom": "^5.2.0",
+    "react-router-scroll-top": "^0.2.1",
     "react-scripts": "4.0.3",
     "react-toastify": "^7.0.3",
     "reactstrap": "^8.9.0",

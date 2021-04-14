@@ -5,7 +5,11 @@ const ScrollToTop = () => {
 	const { pathname } = useLocation()
 	// whenever url path change, scroll all the way to the top
 	useEffect(() => {
-		window.scrollTo(0, 0)
+		window.scroll({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		})
 	}, [pathname])
 	return null
 }
