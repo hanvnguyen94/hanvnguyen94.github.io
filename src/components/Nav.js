@@ -54,7 +54,7 @@ const StyledNav = styled.nav`
 		list-style: none;
 	}
 	#logo {
-		font-family: 'Lobster', cursive;
+		font-family: 'Sofia', cursive;
 		font-size: 1.5rem;
 		font-weight: lighter;
 	}
