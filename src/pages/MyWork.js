@@ -171,35 +171,6 @@ const MyWork = () => {
 				</motion.a>
 			</Movie>
 			<Movie
-				ref={element3}
-				variants={fade}
-				animate={controls3}
-				initial='hidden'
-			>
-				<motion.h2 variants={fade}>To-Do List</motion.h2>
-				<motion.div variants={lineAnim} className='line'></motion.div>
-				<motion.img variants={photoAnim} src={todoList} alt='todoList' />
-				<motion.p variants={fade}>
-					Simple Todo List App made with React helps keep track of your daily
-					tasks
-				</motion.p>
-				<motion.a
-					variants={fade}
-					style={{ marginRight: '1rem' }}
-					target='blank'
-					href='https://github.com/hanvnguyen94/todoList'
-				>
-					<motion.button variants={fade}>Front-End Repo</motion.button>
-				</motion.a>
-				<motion.a
-					variants={fade}
-					target='blank'
-					href='https://hanvnguyen94.github.io/todoList/'
-				>
-					<motion.button variants={fade}>Deployed Site</motion.button>
-				</motion.a>
-			</Movie>
-			<Movie
 				ref={element4}
 				variants={fade}
 				animate={controls4}
