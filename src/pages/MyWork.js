@@ -9,7 +9,6 @@ import mesh from '../img/projects/mesh.jpg'
 import momentum from '../img/projects/momentum.png'
 import subscription from '../img/projects/subscription.png'
 import ticTacToe from '../img/projects/ticTacToe.png'
-import todoList from '../img/projects/todoList.jpg'
 import yelpLoo from '../img/projects/yelpLoo.png'
 
 import styled from 'styled-components'
@@ -30,7 +29,6 @@ const MyWork = () => {
 	const [element, controls] = useScroll()
 	const [element1, controls1] = useScroll()
 	const [element2, controls2] = useScroll()
-	const [element3, controls3] = useScroll()
 	const [element4, controls4] = useScroll()
 	const [element5, controls5] = useScroll()
 	const [element6, controls6] = useScroll()
