@@ -15,6 +15,7 @@ import subscription from '../img/projects/subscription.png'
 import ticTacToe from '../img/projects/ticTacToe.png'
 import todoList from '../img/projects/todoList.jpg'
 import yelpLoo from '../img/projects/yelpLoo.png'
+import ignite from '../img/projects/ignite.jpg'
 
 import { About, Description } from '../styles'
 import styled from 'styled-components'
@@ -43,10 +44,13 @@ const ProjectSection = () => {
 					My <span>passion</span> projects.
 				</motion.h2>
 				<AwesomeSlider startupScreen={startupScreen} animation='fallAnimation'>
-					<motion.div data-src={jam}>
+					<motion.div data-src={ignite}>
 						<Link to='/'>
-							<motion.h4>Jam Player</motion.h4>
+							<motion.h4>Ignite</motion.h4>
 						</Link>
+					</motion.div>
+					<motion.div data-src={jam}>
+						<motion.h4>Music Player</motion.h4>
 					</motion.div>
 					<motion.div data-src={beatMaker}>
 						<motion.h4>The Beat Maker</motion.h4>

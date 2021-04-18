@@ -1,6 +1,7 @@
 import React from 'react'
 
 // images
+import ignite from '../img/projects/ignite.jpg'
 import beatMaker from '../img/projects/beatMaker.jpg'
 import jam from '../img/projects/jam.jpg'
 import loanCal from '../img/projects/loanCal.jpg'
@@ -27,6 +28,7 @@ import ScrollToTop from '../components/ScrollToTop'
 
 const MyWork = () => {
 	const [element, controls] = useScroll()
+	const [element1, controls1] = useScroll()
 	const [element2, controls2] = useScroll()
 	const [element3, controls3] = useScroll()
 	const [element4, controls4] = useScroll()
@@ -44,7 +46,40 @@ const MyWork = () => {
 				<Frame3 variants={slider}></Frame3>
 				<Frame4 variants={slider}></Frame4>
 			</motion.div>
+
 			<Movie>
+				<motion.h2 variants={fade}>Ignite</motion.h2>
+				<motion.div variants={lineAnim} className='line'></motion.div>
+				<Hide>
+					<motion.img variants={photoAnim} src={ignite} alt='ignite' />
+					<motion.p variants={fade}>
+						Games information app built with React hooks and Redux to enhance
+						user interface to give the most updated games info from rawg.io api.
+					</motion.p>
+					<motion.a
+						variants={fade}
+						style={{ marginRight: '1rem' }}
+						target='blank'
+						href='https://github.com/hanvnguyen94/ignite'
+					>
+						<motion.button variants={fade}>Front-End Repo</motion.button>
+					</motion.a>
+					<motion.a
+						variants={fade}
+						target='blank'
+						href='https://www.hanvsolo.com/ignite/'
+					>
+						<motion.button variants={fade}>Deployed Site</motion.button>
+					</motion.a>
+				</Hide>
+			</Movie>
+
+			<Movie
+				ref={element1}
+				variants={fade}
+				animate={controls1}
+				initial='hidden'
+			>
 				<motion.h2 variants={fade}>Music Player</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
 				<Hide>
@@ -52,7 +87,7 @@ const MyWork = () => {
 					<motion.p variants={fade}>
 						Feeling like you need a chill playlist for better concentration on
 						your coding daily tasks? Check out my chillhop playlist as link
-						below
+						below.
 					</motion.p>
 					<motion.a
 						variants={fade}
@@ -76,8 +111,7 @@ const MyWork = () => {
 				<motion.div variants={lineAnim} className='line'></motion.div>
 				<motion.img variants={photoAnim} src={beatMaker} alt='the-beat-maker' />
 				<motion.p variants={fade}>
-					Simple browser application called The Beat Maker. It will generate the
-					beat based on your choices of sounds.
+					Simple browser application engineerd with vanilla JavaScript.
 				</motion.p>
 				<motion.a
 					variants={fade}
@@ -346,8 +380,6 @@ const MyWork = () => {
 	)
 }
 
-// adding motion to styled component
-// nicely doneeee
 const Work = styled(motion.div)`
 	min-height: 100vh;
 	overflow: hidden;
@@ -373,10 +405,9 @@ const Movie = styled(motion.div)`
 		margin-bottom: 3rem;
 	}
 	img {
-		width: 95%;
-		height: 60vh;
+		width: 100%;
+		height: 100vh;
 		object-fit: cover;
-		align-items: center;
 	}
 	button {
 		outline: none;
