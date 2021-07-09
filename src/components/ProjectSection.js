@@ -16,6 +16,7 @@ import ticTacToe from '../img/projects/ticTacToe.png'
 import todoList from '../img/projects/todoList.jpg'
 import yelpLoo from '../img/projects/yelpLoo.png'
 import ignite from '../img/projects/ignite.jpg'
+import firegram from '../img/projects/firegram.jpg'
 
 import { About, Description } from '../styles'
 import styled from 'styled-components'
@@ -44,6 +45,11 @@ const ProjectSection = () => {
 					My <span>passion</span> projects.
 				</motion.h2>
 				<AwesomeSlider startupScreen={startupScreen} animation='fallAnimation'>
+					<motion.div data-src={firegram}>
+						<Link to='/'>
+							<motion.h4>Firegram</motion.h4>
+						</Link>
+					</motion.div>
 					<motion.div data-src={ignite}>
 						<Link to='/'>
 							<motion.h4>Ignite</motion.h4>

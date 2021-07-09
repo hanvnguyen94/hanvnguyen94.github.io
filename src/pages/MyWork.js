@@ -10,6 +10,7 @@ import momentum from '../img/projects/momentum.png'
 import subscription from '../img/projects/subscription.png'
 import ticTacToe from '../img/projects/ticTacToe.png'
 import yelpLoo from '../img/projects/yelpLoo.png'
+import firegram from '../img/projects/firegram.jpg'
 
 import styled from 'styled-components'
 //animation
@@ -29,6 +30,7 @@ const MyWork = () => {
 	const [element, controls] = useScroll()
 	const [element1, controls1] = useScroll()
 	const [element2, controls2] = useScroll()
+	const [element3, controls3] = useScroll()
 	const [element4, controls4] = useScroll()
 	const [element5, controls5] = useScroll()
 	const [element6, controls6] = useScroll()
@@ -45,7 +47,39 @@ const MyWork = () => {
 				<Frame4 variants={slider}></Frame4>
 			</motion.div>
 
+			{/* project */}
 			<Movie>
+				<motion.h2 variants={fade}>PhotoGram</motion.h2>
+				<motion.div variants={lineAnim} className='line'></motion.div>
+				<Hide>
+					<motion.img variants={photoAnim} src={firegram} alt='firegram' />
+					<motion.p variants={fade}>
+						Photo Gallery built from Reactjs in the front end and Firebase in
+						the back end. You will find thumbnails introducing all of images I
+						have posted and stored inside Firebase database, you can also share
+						your images from local computer by clicking the plus button.
+						Clicking each image will zoom in for better view.
+					</motion.p>
+					<motion.a
+						variants={fade}
+						style={{ marginRight: '1rem' }}
+						target='blank'
+						href='https://github.com/hanvnguyen94/han-firegram'
+					>
+						<motion.button variants={fade}>Front-End Repo</motion.button>
+					</motion.a>
+					<motion.a
+						variants={fade}
+						target='blank'
+						href='https://www.hanvsolo.com/han-firegram/'
+					>
+						<motion.button variants={fade}>Deployed Site</motion.button>
+					</motion.a>
+				</Hide>
+			</Movie>
+
+			{/* project 2 */}
+			<Movie ref={element} variants={fade} animate={controls} initial='hidden'>
 				<motion.h2 variants={fade}>Ignite</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
 				<Hide>
@@ -104,7 +138,12 @@ const MyWork = () => {
 					</motion.a>
 				</Hide>
 			</Movie>
-			<Movie ref={element} variants={fade} animate={controls} initial='hidden'>
+			<Movie
+				ref={element2}
+				variants={fade}
+				animate={controls2}
+				initial='hidden'
+			>
 				<motion.h2 variants={fade}>The Beat Maker</motion.h2>
 				<motion.div variants={lineAnim} className='line'></motion.div>
 				<motion.img variants={photoAnim} src={beatMaker} alt='the-beat-maker' />
@@ -128,9 +167,9 @@ const MyWork = () => {
 				</motion.a>
 			</Movie>
 			<Movie
-				ref={element2}
+				ref={element3}
 				variants={fade}
-				animate={controls2}
+				animate={controls3}
 				initial='hidden'
 			>
 				<motion.h2 variants={fade}>Yelp Loo</motion.h2>
