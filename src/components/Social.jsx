@@ -6,7 +6,7 @@ const SocialShare = [  {
   },
   {
     iconName: "github",
-    link: "https://www.instagram.com/han.dragonlady/",
+    link: "https://github.com/hanvnguyen94",
   },
   {
     iconName: "linkedin",
