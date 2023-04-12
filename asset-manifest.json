@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a8fc506.css",
-    "main.js": "/static/js/main.c22c81b4.js",
-    "static/js/27.72aebd31.chunk.js": "/static/js/27.72aebd31.chunk.js",
-    "static/media/yelpLoo.png": "/static/media/yelpLoo.42f6e1ea0089644776bc.png",
-    "static/media/blackwhite2.png": "/static/media/blackwhite2.9bb1671f435674d7c726.png",
-    "static/media/momentum.png": "/static/media/momentum.26f9eeaae6301c339745.png",
-    "static/media/jam.jpg": "/static/media/jam.b71f222e3358c2ac77e8.jpg",
-    "static/media/beatMaker.jpg": "/static/media/beatMaker.c0e49173e2d1ec1a7153.jpg",
-    "static/media/ignite.jpg": "/static/media/ignite.edf0ff35bda09ccecafb.jpg",
-    "static/media/ticTacToe.png": "/static/media/ticTacToe.738d84104dc6ff3ea9ac.png",
-    "index.html": "/index.html"
+    "main.css": "/hanvsolo.com/static/css/main.7533246b.css",
+    "main.js": "/hanvsolo.com/static/js/main.c6c8b09e.js",
+    "static/js/27.72aebd31.chunk.js": "/hanvsolo.com/static/js/27.72aebd31.chunk.js",
+    "static/media/yelpLoo.png": "/hanvsolo.com/static/media/yelpLoo.42f6e1ea0089644776bc.png",
+    "static/media/blackwhite2.png": "/hanvsolo.com/static/media/blackwhite2.9bb1671f435674d7c726.png",
+    "static/media/momentum.png": "/hanvsolo.com/static/media/momentum.26f9eeaae6301c339745.png",
+    "static/media/jam.jpg": "/hanvsolo.com/static/media/jam.b71f222e3358c2ac77e8.jpg",
+    "static/media/beatMaker.jpg": "/hanvsolo.com/static/media/beatMaker.c0e49173e2d1ec1a7153.jpg",
+    "static/media/ignite.jpg": "/hanvsolo.com/static/media/ignite.edf0ff35bda09ccecafb.jpg",
+    "static/media/ticTacToe.png": "/hanvsolo.com/static/media/ticTacToe.738d84104dc6ff3ea9ac.png",
+    "index.html": "/hanvsolo.com/index.html"
   },
   "entrypoints": [
-    "static/css/main.6a8fc506.css",
-    "static/js/main.c22c81b4.js"
+    "static/css/main.7533246b.css",
+    "static/js/main.c6c8b09e.js"
   ]
 }
