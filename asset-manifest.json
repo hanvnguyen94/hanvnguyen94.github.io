@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6a8fc506.css",
-    "main.js": "/static/js/main.c22c81b4.js",
+    "main.js": "/static/js/main.433c72c2.js",
     "static/js/27.72aebd31.chunk.js": "/static/js/27.72aebd31.chunk.js",
     "static/media/yelpLoo.png": "/static/media/yelpLoo.42f6e1ea0089644776bc.png",
     "static/media/blackwhite2.png": "/static/media/blackwhite2.9bb1671f435674d7c726.png",
@@ -14,6 +14,6 @@
   },
   "entrypoints": [
     "static/css/main.6a8fc506.css",
-    "static/js/main.c22c81b4.js"
+    "static/js/main.433c72c2.js"
   ]
 }
