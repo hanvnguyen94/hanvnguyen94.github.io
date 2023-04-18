@@ -11,11 +11,7 @@ const NotFound = () => {
       <div className="not-found-wrapper">
         <div className="leftpart">
           <div className="leftpart_inner">
-            <div className="logo">
-              <Link className="navbar-brand" to="/">
-                <img src="/assets/img/logo/dark.png" alt="brand" />
-              </Link>
-            </div>
+
             {/* END LOGO */}
             <div className="copyright">
               <p>
